@@ -273,10 +273,10 @@ else:
     st.sidebar.warning("⚠ Model Not Trained")
 
 st.sidebar.markdown("---")
-st.sidebar.markdown(
-    # "<small style='color: #777;'>Academic Data Science Project<br>Demonstrating Units I, III, IV, & V</small>",
-    unsafe_allow_html=True
-)
+# st.sidebar.markdown(
+     # "<small style='color: #777;'>Academic Data Science Project<br>Demonstrating Units I, III, IV, & V</small>",
+    # unsafe_allow_html=True
+# )
 
 
 # =============================================================================
