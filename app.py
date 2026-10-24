@@ -274,10 +274,10 @@ else:
     st.sidebar.warning("⚠ Model Not Trained")
 
 st.sidebar.markdown("---")
-st.sidebar.markdown(
-    "<small style='color: #777;'>Academic Data Science Project<br>Demonstrating Units I, III, IV, & V</small>",
-    unsafe_allow_html=True
-)
+# st.sidebar.markdown(
+#     "<small style='color: #777;'>Academic Data Science Project<br>Demonstrating Units I, III, IV, & V</small>",
+#     unsafe_allow_html=True
+# )
 
 
 # =============================================================================
@@ -395,13 +395,13 @@ if menu == "🧠 How the Model Works":
         st.markdown("- **Matplotlib & Seaborn**: Statistical plots & heatmaps")
         st.markdown("- **Streamlit**: Interactive web application framework")
 
-    st.markdown("""
-    <div style='background-color: #fff9db; border-left: 4px solid #f59f00; padding: 0.8rem 1rem; border-radius: 4px; margin-top: 1.5rem;'>
-        <b>⚠️ Educational Disclaimer:</b> This project is built as an educational Data Science demonstration.
-        Predictions are data-driven statistical recommendations based on historical patterns and do not constitute
-        a formal agricultural or economic guarantee of crop success.
-    </div>
-    """, unsafe_allow_html=True)
+    # st.markdown("""
+    # <div style='background-color: #fff9db; border-left: 4px solid #f59f00; padding: 0.8rem 1rem; border-radius: 4px; margin-top: 1.5rem;'>
+    #     <b>⚠️ Educational Disclaimer:</b> This project is built as an educational Data Science demonstration.
+    #     Predictions are data-driven statistical recommendations based on historical patterns and do not constitute
+    #     a formal agricultural or economic guarantee of crop success.
+    # </div>
+    # """, unsafe_allow_html=True)
 
 
 # =============================================================================
@@ -409,7 +409,7 @@ if menu == "🧠 How the Model Works":
 # =============================================================================
 elif menu == "📊 Dataset & EDA":
     st.markdown("<div class='main-header'>📊 Dataset & Exploratory Data Analysis</div>", unsafe_allow_html=True)
-    st.markdown("<div class='sub-header'>Unit I: Data Understanding, Cleaning, and Statistical Summarization</div>", unsafe_allow_html=True)
+    # st.markdown("<div class='sub-header'>Unit I: Data Understanding, Cleaning, and Statistical Summarization</div>", unsafe_allow_html=True)
 
     if df is None:
         st.error("Dataset not found at `dataset/crop_data.csv`. Please ensure the file exists.")
@@ -431,7 +431,7 @@ elif menu == "📊 Dataset & EDA":
     st.dataframe(df.describe().T.style.format("{:.2f}"), use_container_width=True)
 
     # Attribute Types Table
-    with st.expander("🔍 View Attribute Types & Objects (Unit I Syllabus)"):
+    with st.expander("🔍 View Attribute Types & Objects"):
         attr_data = [
             {"Attribute": "N", "Type": "Numeric (Continuous)", "Description": "Ratio of Nitrogen content in soil (kg/ha)"},
             {"Attribute": "P", "Type": "Numeric (Continuous)", "Description": "Ratio of Phosphorous content in soil (kg/ha)"},
@@ -523,7 +523,7 @@ elif menu == "📊 Dataset & EDA":
 # =============================================================================
 elif menu == "📈 Model Performance":
     st.markdown("<div class='main-header'>📈 Model Evaluation & Comparison</div>", unsafe_allow_html=True)
-    st.markdown("<div class='sub-header'>Unit III: Classification using Decision Tree, K-Nearest Neighbors, and Random Forest</div>", unsafe_allow_html=True)
+    # st.markdown("<div class='sub-header'>Unit III: Classification using Decision Tree, K-Nearest Neighbors, and Random Forest</div>", unsafe_allow_html=True)
 
     if best_model is None or metadata is None:
         st.warning("⚠️ Trained model artifacts not found. You can train the models directly using the button below.")
@@ -635,7 +635,7 @@ elif menu == "📈 Model Performance":
 # =============================================================================
 elif menu == "🔬 PCA Analysis":
     st.markdown("<div class='main-header'>🔬 Principal Component Analysis (PCA)</div>", unsafe_allow_html=True)
-    st.markdown("<div class='sub-header'>Unit IV: Dimensionality Reduction for High-Dimensional Agricultural Data</div>", unsafe_allow_html=True)
+    # st.markdown("<div class='sub-header'>Unit IV: Dimensionality Reduction for High-Dimensional Agricultural Data</div>", unsafe_allow_html=True)
 
     if df is None:
         st.error("Dataset not found at `dataset/crop_data.csv`.")
@@ -643,7 +643,7 @@ elif menu == "🔬 PCA Analysis":
 
     st.markdown("""
     <div class='highlight-box'>
-        <b>Unit IV Concept — Dimensionality Reduction:</b><br>
+        # <b>Unit IV Concept — Dimensionality Reduction:</b><br>
         <i>"PCA is used here for visualization and dimensionality-reduction analysis.
         The original features are retained for the main crop prediction model so that the prediction system
         remains simple and interpretable."</i>
