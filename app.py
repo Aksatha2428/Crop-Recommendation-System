@@ -370,7 +370,7 @@ if menu == "🧠 How the Model Works":
                                                                                           ▼
     ┌────────────────┐       ┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
     │ Streamlit Web  │  <──  │ Best Model      │  <──  │ Metric Eval     │  <──  │ 3 Classifiers:  │
-    │ Recommendation │       │ Selection (Auto)│       │ (Acc, Prec, F1) │       │ DT, KNN, RF     │
+    │ Recommendation │       │   Selection     │       │ (Acc, Prec, F1) │       │ DT, KNN, RF     │
     └────────────────┘       └─────────────────┘       └─────────────────┘       └─────────────────┘
     ```
     """)
